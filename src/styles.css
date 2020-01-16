@@ -1,3 +1,23 @@
 h1 {
-    color:red;
+    color:black;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.hollar-dollar {
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.tip-group {
+    padding-left:10%;
+    padding-right:10%;
+}
+.you-tippin {
+    padding-left:10%;
+    padding-right:10%;
+}
+.results {
+    padding-left:10%;
+    padding-right:10%;
 }

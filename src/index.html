@@ -3,16 +3,70 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Front End Web 100</title>
+    <title>Front End Web 100 - Tip Calculator</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
 </head>
 
 <body>
     <header>
-        <h1>Front End Web 100 Starter</h1>
-        <h2>Progressive ITU</h2>
+        <h1>Tip Calculator
+        </h1>
     </header>
     <main>
-        
+        <div class="input-group mb-3 hollar-dollar"
+             style="padding-left:10%;padding-right:10%">
+            <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+                <!-- <span class="input-group-text">0.00</span> -->
+            </div>
+            <input type="text"
+                   class="form-control"
+                   aria-label="Dollar amount (with dot and two decimal places)">
+        </div>
+        <div class="btn-group btn-group-toggle tip-group"
+             data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="radio"
+                       name="options"
+                       id="10"
+                       onClick="check(10)"
+                       checked> 10%
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio"
+                       name="options"
+                       onClick="check(15)"
+                       id="15"> 15%
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio"
+                       name="options"
+                       onClick="check(20)"
+                       id="20"> 20%
+            </label>
+        </div>
+
+        <p class=you-tippin>You are tipping: $<span id=percentTip>0.00</span></p>
+        <!-- 
+        <div class="input-group">
+            <input type="text"
+                   class="form-control"
+                   aria-label="Dollar amount (with dot and two decimal places)">
+            <div class="input-group-append">
+                <span class="input-group-text">$</span>
+                <span class="input-group-text">0.00</span>
+            </div>
+        </div> -->
+        <ul class="list-group results">
+            <li class="list-group-item">Bill Amount: $<span id="billAmount">0.00</span></li>
+            <li class="list-group-item">Tip Percentage: $<span id="billAmount">0.00</span></li>
+            <li class="list-group-item">Amount of Tip: $<span id="billAmount">0.00</span></li>
+            <li class="list-group-item">Total to be Paid: $<span id="billAmount">0.00</span></li>
+        </ul>
+
     </main>
 </body>
 
