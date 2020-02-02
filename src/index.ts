@@ -84,6 +84,7 @@ function updateTipAmt(selectedRadioButton: string) {
             document.getElementById('lbl15').classList.remove('active');
             document.getElementById('lbl20').classList.remove('active');
             currentRate = 10;
+            processUpdatedBillAmount();
             break;
         }
         case '15': {
@@ -98,6 +99,7 @@ function updateTipAmt(selectedRadioButton: string) {
             document.getElementById('lbl10').classList.remove('active');
             document.getElementById('lbl20').classList.remove('active');
             currentRate = 15;
+            processUpdatedBillAmount();
             break;
         }
         case '20': {
@@ -112,6 +114,7 @@ function updateTipAmt(selectedRadioButton: string) {
             document.getElementById('lbl10').classList.remove('active');
             document.getElementById('lbl15').classList.remove('active');
             currentRate = 20;
+            processUpdatedBillAmount();
             break;
             }
         default: {
